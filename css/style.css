@@ -561,7 +561,11 @@
 
 			.image.fit img {
 				width: 100%;
+				height: 100%;
 			}
+		.image.fit.mini{
+			height: 15rem;
+		}
 
 /* List */
 
