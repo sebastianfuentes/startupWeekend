@@ -225,6 +225,11 @@
 	header.special {
 		text-align: center;
 	}
+	section .container{
+		background: #f5f5f5;
+		padding: 2em;
+		border-radius: 5px;
+	}
 
 /* Form */
 
@@ -930,7 +935,7 @@
 	}
 
 		.main.style1 {
-			background: #fff;
+			background: #e5e5e5;
 		}
 
 		.main.style2 {
@@ -1020,15 +1025,17 @@
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
-
+			.row{
+				padding: 1.5em 0;
+			}
 /* Header */
 
 	#header {
 		padding: 9em 0 9em 0;
 		background-color: #EF9112;
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-position: top,center center,					center center;
+		background-attachment: fixed,fixed,fixed;
+		background-position: top,center center,center center;
 		background-size: auto,cover,cover;
 		overflow: hidden;
 		position: relative;
