@@ -1025,7 +1025,7 @@
 
 	#header {
 		padding: 9em 0 9em 0;
-		background-color: #4686a0;
+		background-color: #EF9112;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-position: top,center center,					center center;
@@ -1043,7 +1043,7 @@
 				color: #ffffff;
 			}
 		#header h1{
-			font-size: 50px;
+			font-size: 40px;
 		}
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
 			color: #ffffff;
