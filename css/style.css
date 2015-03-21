@@ -225,12 +225,16 @@
 	header.special {
 		text-align: center;
 	}
-	section .container{
+	#one > .container{
 		background: #f5f5f5;
 		padding: 2em;
 		border-radius: 5px;
 	}
-
+	#three > .container{
+		background: #f5f5f5;
+		padding: 2em;
+		border-radius: 5px;
+	}
 /* Form */
 
 	form {
