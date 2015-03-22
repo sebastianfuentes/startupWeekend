@@ -1,0 +1,118 @@
+a{
+	color: #e0e0e0;
+}
+header{
+	position: absolute;
+	background: #fff;
+	height: 70px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	box-shadow: 5px 5px 20px rgba(25,25,25,.3);
+}
+header nav{
+	box-shadow: inset 0 0 1em rgba(25,25,25,.1);
+	padding: 0;
+	margin: 0;
+}
+
+header nav .nav-container img{
+	display: inline-block;
+	height: 90px;
+	margin: 0 0 0 1em;
+	position: relative;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 5px 5px 20px rgba(25,25,25,.3);
+}
+header nav .nav-container:first-child{
+	float: left;
+	padding:0 1em;
+	display: inline-block;
+	margin: 0 !important;
+}
+header nav .nav-container{
+	float: right;
+	padding:0 1em;
+	display: inline-block;
+	margin: 0 2em;
+}
+header nav .nav-container ul{
+	list-style-type: none;
+}
+header nav .nav-container li{
+	display: inline-block;
+	padding: 1em 2em;
+	border: 1px red;
+	border-radius: 2px 2px;
+
+}
+header nav .nav-container li:hover{
+	
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background: #e6e6e6;
+	
+}
+.container{
+	text-align: center;
+	padding-top: 100px;
+	margin:0 0 0 1em;
+	width: 95%important;
+	height:1200px!important;
+	background: #efefef;
+	min-height: 500px;
+	box-shadow: 0px 5px 20px rgba(25,25,25,.3);
+}
+.text-container{
+	position: relative;
+	width: 100%;
+	height: 15%;
+}
+.text-container div{
+	position: relative;
+	float: none;
+	height: 15%;
+	width: 100%;
+	display: inline-block;
+}
+.text-container > a{
+	position: relative;
+	height: 15%;
+	display: inline-block;
+	border:1px solid #a6a6a6 !important;
+}
+.text-container > a:hover{
+	color: black !important;
+}
+.partial-view{
+	text-align: center;
+	padding-top: 100px;
+	position: relative;
+	margin:0 1em 0 1em;
+	width: 100% !important;
+	height: 100%!important;
+	background: #efefef;
+	min-height: 400px;
+	box-shadow: 0px 5px 20px rgba(25,25,25,.3);
+}
+.partial-view iframe{
+	text-align: center;
+	padding-top: 100px;
+	position: absolute;
+	top: 0;
+	margin:0 0 0 1em;
+	width: 100% !important;
+	height: 0!important;
+	background: #efefef;
+	min-height: 400px;
+	box-shadow: 0px 5px 20px rgba(25,25,25,.3);
+}
+.button{
+	width: auto;
+	border: 1px solid #a6a6a6;
+	background: #e0e0e0 !important;
+}
