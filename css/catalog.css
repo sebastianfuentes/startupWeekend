@@ -47,6 +47,7 @@ header nav .nav-container li{
 	border-radius: 2px 2px;
 
 }
+#map{ height: 600px }
 header nav .nav-container li:hover{
 	
 	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -62,7 +63,7 @@ header nav .nav-container li:hover{
 	padding-top: 100px;
 	margin:0 0 0 1em;
 	width: 95%important;
-	height:1200px!important;
+	height:100%!important;
 	background: #efefef;
 	min-height: 500px;
 	box-shadow: 0px 5px 20px rgba(25,25,25,.3);
@@ -115,4 +116,13 @@ header nav .nav-container li:hover{
 	width: auto;
 	border: 1px solid #a6a6a6;
 	background: #e0e0e0 !important;
+	margin: 1em;
+}
+form{
+	display: inline-block;
+	float: none;
+	text-align: left;
+	width: 80%;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
 }

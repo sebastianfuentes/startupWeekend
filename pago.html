@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>My Stanza</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="css/normlize.css" />
+		<link rel="stylesheet" href="css/catalog.css" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/value.js"></script>
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+ 		<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+ 		<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.css' rel='stylesheet' />
+		<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.js'></script>
+		<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-geodesy/v0.1.0/leaflet-geodesy.js'></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="shortcut icon" href="logo-icon.png" type="image/png" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+<body onload="onReady()">
+	<header>
+		<nav>
+			<figure class="nav-container">
+				<img src="images/logo-extendido.png">
+			</figure>
+			<div class="nav-container">
+				<ul>
+					<li><a href="index.html"class="option">Home</a></li>
+					<li><a href="" class="option">Diseña</a></li>
+					<li><a href="#" class="option">Inicia Sesión</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="container" style="height:100% !important;">
+		<article id="text-container">
+			<div><h2>Introduce los datos de facturacion:</h2></div>
+		</article>
+		<article id="text-container">
+			<form name="purchase" action="finished.html" method="POST" id="card-form">
+				  <span class="card-errors"></span>
+				  <div class="form-row">
+					<label>
+				      <span>Costo:</span>
+					<input type="text" value="" id="valuei" readonly="readonly" />
+				    </label>
+				    <label>
+				      <span>Nombre del tarjetahabiente:</span>
+				      <input type="text" size="20" data-conekta="card[name]"/>
+				    </label>
+				  </div>
+				  <div class="form-row">
+				    <label>
+				      <span>Número de tarjeta de crédito:</span>
+				      <input type="text" size="20" data-conekta="card[number]"/>
+				    </label>
+				  </div>
+				  <div class="form-row" style="width:10%;position:relative;display:inline-block;">
+				    <label>
+				      <span>CVC:</span>
+				      <input type="text" size="4" data-conekta="card[cvc]"/>
+				    </label>
+				  </div>
+				  <div class="form-row" style="width:80%;position:relative;display:inline-block;margin-left:5%;">
+				    <label>
+				      <span>Fecha de expiración (MM/AAAA):</span>
+				  </label>
+				      <input type="text" size="2" data-conekta="card[exp_month]" style="width:10%;display:inline-block;"/>
+				    
+				    <span>/</span>
+				    <input type="text" size="4" data-conekta="card[exp_year]" style="width:10%;display:inline-block;"/>
+				  </div>
+				  <div class="form-row" style="text-align:center; margin-top:1em;">
+					<div id="map"style="height:500px;">
+					</div>
+				  </div>
+				  <div style="width:100%; text-align:center;"><h3><b>O</b></h3></div>
+ 				  <div class="form-row" style="width:60%;position:relative;display:inline-block;">
+				    <label>
+				      <span>Escribe tu direccion:</span>
+				      <input type="text" data-conekta="card[cvc]"/>
+				    </label>
+				  </div>
+				  <div class="form-row" style="width:15 %;position:relative;display:inline-block;margin-left:5%;">
+				    <label>
+				      <span>C.P.:</span>
+				  </label>
+				      <input type="text" data-conekta="card[exp_month]" style="width:10%;display:inline-block;"/>
+				  </div>
+				  <div class="form-row" style="text-align:center; margin-top:1em;">
+				  <button type="submit">Comprar tu <i>Stanza</i></button>
+				  </div>
+				</form>
+		</article>
+		<script type="text/javascript" src="js/map.js"></script>
+	</section>
+	<footer>
+	</footer>
+</body>
+</html>
